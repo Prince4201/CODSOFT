@@ -1,0 +1,122 @@
+:root {
+  --bg-color: #1e1e2f;
+  --text-color: #ffffff;
+  --btn-color: #333;
+  --accent-color: #0ff;
+}
+
+body.light {
+  --bg-color: #f0f0f0;
+  --text-color: #000000;
+  --btn-color: #dcdcdc;
+  --accent-color: #0077ff;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  min-height: 100vh;
+  transition: all 0.3s ease;
+}
+
+.calculator {
+  max-width: 360px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px var(--accent-color);
+}
+
+#display {
+  width: 100%;
+  height: 60px;
+  font-size: 2em;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  padding: 10px;
+  background: #000;
+  color: lime;
+  text-align: right;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  padding: 18px;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 10px;
+  background: var(--btn-color);
+  color: var(--text-color);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: var(--accent-color);
+  color: black;
+}
+
+.history {
+  margin-top: 20px;
+  background: var(--btn-color);
+  padding: 10px;
+  border-radius: 10px;
+  max-height: 150px;
+  overflow-y: auto;
+  color: var(--text-color);
+}
+
+.history h3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1em;
+}
+
+#clearHistoryBtn {
+  font-size: 0.8em;
+  padding: 5px 10px;
+  background: crimson;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+#clearHistoryBtn:hover {
+  background: red;
+}
+
+.history ul {
+  list-style: none;
+  font-size: 0.9em;
+  padding-left: 0;
+}
+
+#quote {
+  font-style: italic;
+  margin: 5px 0 15px;
+  font-size: 0.9em;
+  color: var(--accent-color);
+}
+
+.theme-toggle {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  font-size: 1.5em;
+}

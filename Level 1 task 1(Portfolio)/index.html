@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prince Jaiswal |Aspiring Full Stack Developer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div class="loader">
+    <div class="loader-content">
+      <div class="loader-spinner"></div>
+      <p class="loader-text">Initializing Portfolio...</p>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="#home" class="navbar-logo">Prince Jaiswal</a>
+      <div class="navbar-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="navbar-menu">
+        <li class="navbar-item"><a href="#home" class="navbar-link">Home</a></li>
+        <li class="navbar-item"><a href="#about" class="navbar-link">About</a></li>
+        <li class="navbar-item"><a href="#skills" class="navbar-link">Skills</a></li>
+        <li class="navbar-item"><a href="#projects" class="navbar-link">Projects</a></li>
+        <li class="navbar-item"><a href="#achievements" class="navbar-link">Achievements</a></li>
+        <li class="navbar-item"><a href="#contact" class="navbar-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section with 3D Canvas -->
+  <section id="home" class="hero">
+    <canvas id="3d-canvas"></canvas>
+    <div class="hero-container">
+      <div class="hero-content">
+        <h1 class="hero-title">Hi, I'm <span class="highlight">Prince Jaiswal</span></h1>
+        <h2 class="hero-subtitle">Full Stack Developer & Tech Enthusiast</h2>
+        <p class="hero-description">1st Year B.Tech CSE student at LPU building innovative web solutions</p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-secondary">Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="image-wrapper">
+          <img src="https://via.placeholder.com/400x400" alt="Prince Jaiswal" class="profile-image">
+          <div class="tech-icons">
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-css3-alt"></i>
+            <i class="fab fa-js"></i>
+            <i class="fab fa-react"></i>
+            <i class="fab fa-node-js"></i>
+            <i class="fab fa-python"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll Down</span>
+      <div class="mouse"></div>
+    </div>
+  </section>
+
+  <!-- Orb Navigation -->
+  <div class="orbs">
+    <div class="orb" data-section="about"><span>About</span></div>
+    <div class="orb" data-section="skills"><span>Skills</span></div>
+    <div class="orb" data-section="projects"><span>Projects</span></div>
+    <div class="orb" data-section="contact"><span>Contact</span></div>
+  </div>
+
+  <!-- About Section -->
+  <section id="about" class="section about">
+    <div class="section-container">
+      <h2 class="section-title"><span class="section-number">01.</span> About Me</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>I'm a passionate <span class="highlight">Computer Science Engineering</span> student at Lovely Professional University with a strong focus on full-stack web development and problem-solving.</p>
+          <p>My journey in tech began with learning C and C++, which laid a strong foundation for my programming skills. I then expanded my knowledge to web technologies and have since built several impactful projects.</p>
+          <p>Beyond coding, I enjoy chess, public speaking, and mentoring others in technology. My goal is to become a Full Stack Developer at a leading tech company where I can solve real-world challenges through innovative software solutions.</p>
+          <div class="education">
+            <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+            <div class="education-item">
+              <h4>Bachelor of Technology in Computer Science Engineering</h4>
+              <p>Lovely Professional University (LPU)</p>
+              <p>2023 - Present (1st Year Undergraduate)</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-image">
+          <div class="image-frame">
+            <img src="photo.jpg" alt="Prince Jaiswal" class="about-img">
+            <div class="frame-decoration"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section skills">
+    <div class="section-container">
+      <h2 class="section-title"><span class="section-number">02.</span> My Skills</h2>
+      <div class="skills-container">
+        <div class="skills-category">
+          <h3><i class="fas fa-code"></i> Programming Languages</h3>
+          <div class="skills-grid">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>C</span>
+                <span>90%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="90%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>C++</span>
+                <span>85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Python</span>
+                <span>80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="80%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>JavaScript</span>
+                <span>85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="85%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-category">
+          <h3><i class="fas fa-laptop-code"></i> Web Development</h3>
+          <div class="skills-grid">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>HTML5/CSS3</span>
+                <span>95%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="95%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>React.js</span>
+                <span>75%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="75%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Node.js</span>
+                <span>80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="80%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>PHP</span>
+                <span>70%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="70%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-category">
+          <h3><i class="fas fa-database"></i> Databases & Tools</h3>
+          <div class="skills-grid">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>MySQL</span>
+                <span>85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Firebase</span>
+                <span>75%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="75%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Git/GitHub</span>
+                <span>90%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="90%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Figma</span>
+                <span>70%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="70%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section projects">
+    <div class="section-container">
+      <h2 class="section-title"><span class="section-number">03.</span> My Projects</h2>
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="https://via.placeholder.com/600x400" alt="EduPulse">
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+              <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">EduPulse</h3>
+            <p class="project-description">AI-powered academic platform for first-year students with notes, PYQs, calculators, and gamified learning tools.</p>
+            <div class="project-tech">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>PHP</span>
+              <span>MySQL</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="https://via.placeholder.com/600x400" alt="FOODHUB">
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+              <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">FOODHUB</h3>
+            <p class="project-description">Fully responsive food ordering website with user authentication and real-time order tracking.</p>
+            <div class="project-tech">
+              <span>PHP</span>
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>MySQL</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="https://via.placeholder.com/600x400" alt="ZeroMicroPlastic">
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+              <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">ZeroMicroPlastic</h3>
+            <p class="project-description">Social awareness website about microplastic pollution with educational resources.</p>
+            <div class="project-tech">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="https://via.placeholder.com/600x400" alt="TECHNOVA Club Portal">
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+              <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">TECHNOVA Club Portal</h3>
+            <p class="project-description">College club management platform with event registration and performance tracking.</p>
+            <div class="project-tech">
+              <span>PHP</span>
+              <span>MySQL</span>
+              <span>Bootstrap</span>
+              <span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="https://via.placeholder.com/600x400" alt="Smart Parking System">
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+              <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Arduino Smart Parking</h3>
+            <p class="project-description">Automated parking system using ultrasonic sensors and Arduino Uno.</p>
+            <div class="project-tech">
+              <span>Arduino</span>
+              <span>C++</span>
+              <span>Electronics</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements Section -->
+  <section id="achievements" class="section achievements">
+    <div class="section-container">
+      <h2 class="section-title"><span class="section-number">04.</span> Achievements</h2>
+      <div class="achievements-container">
+        <div class="achievement-card">
+          <div class="achievement-icon">
+            <i class="fas fa-trophy"></i>
+          </div>
+          <div class="achievement-content">
+            <h3>1st Prize for Published Book</h3>
+            <p>Awarded first prize for authoring and publishing a book during school years.</p>
+          </div>
+        </div>
+        
+        <div class="achievement-card">
+          <div class="achievement-icon">
+            <i class="fas fa-chess"></i>
+          </div>
+          <div class="achievement-content">
+            <h3>District Chess Champion</h3>
+            <p>Won 1st place in district-level chess championship.</p>
+          </div>
+        </div>
+        
+        <div class="achievement-card">
+          <div class="achievement-icon">
+            <i class="fas fa-lightbulb"></i>
+          </div>
+          <div class="achievement-content">
+            <h3>Innovation Award</h3>
+            <p>Recognized for creativity and innovation in academics.</p>
+          </div>
+        </div>
+        
+        <div class="achievement-card">
+          <div class="achievement-icon">
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="achievement-content">
+            <h3>Fast Learner Recognition</h3>
+            <p>Acknowledged as a fast learner and key performer in college projects.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact">
+    <div class="section-container">
+      <h2 class="section-title"><span class="section-number">05.</span> Get In Touch</h2>
+      <div class="contact-container">
+        <div class="contact-info">
+          <h3>Contact Information</h3>
+          <div class="info-item">
+            <i class="fas fa-envelope"></i>
+            <span>your.email@example.com</span>
+          </div>
+          <div class="info-item">
+            <i class="fab fa-linkedin"></i>
+            <a href="#" target="_blank">linkedin.com/in/prince-jaiswal</a>
+          </div>
+          <div class="info-item">
+            <i class="fab fa-github"></i>
+            <a href="#" target="_blank">github.com/prince-jaiswal</a>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-globe"></i>
+            <a href="https://prince-jaiswal.vercel.app" target="_blank">prince-jaiswal.vercel.app</a>
+          </div>
+          <div class="social-links">
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-discord"></i></a>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form id="form" class="form">
+            <div class="form-group">
+              <input type="text" id="name" class="form-input" placeholder=" " required>
+              <label for="name" class="form-label">Your Name</label>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" class="form-input" placeholder=" " required>
+              <label for="email" class="form-label">Your Email</label>
+              <div class="matrix-fall"></div>
+            </div>
+            <div class="form-group">
+              <input type="text" id="subject" class="form-input" placeholder=" ">
+              <label for="subject" class="form-label">Subject</label>
+            </div>
+            <div class="form-group">
+              <textarea id="message" class="form-input" placeholder=" " rows="5" required></textarea>
+              <label for="message" class="form-label">Your Message</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hidden Terminal -->
+  <div class="terminal">
+    <div class="terminal-header">
+      <span>Terminal</span>
+      <button class="terminal-close">&times;</button>
+    </div>
+    <div class="terminal-content">
+      <span>>_ TYPE 'HELP' FOR COMMANDS...</span>
+    </div>
+    <div class="terminal-input-container">
+      <span>>_</span>
+      <input type="text" class="terminal-input" placeholder="">
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <div class="footer-logo">Prince Jaiswal</div>
+        <p class="footer-text">Aspiring Full Stack Developer & Tech Enthusiast</p>
+      </div>
+      <div class="footer-links">
+        <a href="#home" class="footer-link">Home</a>
+        <a href="#about" class="footer-link">About</a>
+        <a href="#skills" class="footer-link">Skills</a>
+        <a href="#projects" class="footer-link">Projects</a>
+        <a href="#contact" class="footer-link">Contact</a>
+      </div>
+      <div class="footer-social">
+        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> Prince Jaiswal. All rights reserved.</p>
+      <p>Designed & Built with ❤️ by Prince Jaiswal</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <a href="#home" class="back-to-top" id="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </a>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
